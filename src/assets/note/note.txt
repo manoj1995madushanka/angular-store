@@ -31,6 +31,11 @@ Built-in structural directives
   NgIf, NgFor, NgSwitch
 
 
+pipes are simple functions to use in template expressions to accept an input value and return a transformed value
+pipes are useful because you can use them throughout your application, while only declaring each pipe once
+use pipes to transform strings, currency amounts, dates and other data for display
+
+
 
 
 

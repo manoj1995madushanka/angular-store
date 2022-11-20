@@ -12,7 +12,8 @@
     <li>
       {{i + 1}}
       <img [src]="spectacle.image" [alt]="spectacle.model" width="100">
-      {{spectacle.model}} by {{spectacle.brand}}
+      {{spectacle.model | titlecase }} by {{spectacle.brand | titlecase }}
+      <p>{{spectacle.price | currency:'LKR' }}</p>
     </li>
   </ng-container>
 </ul>
