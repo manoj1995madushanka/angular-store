@@ -7,10 +7,12 @@ import { SpectacleComponent } from './spectacle/spectacle.component';
 import {FormsModule} from "@angular/forms";
 import { SelectedSpectacleComponent } from './spectacle/selected-spectacle/selected-spectacle.component';
 import {SpectacleModule} from "./spectacle/spectacle.module";
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
