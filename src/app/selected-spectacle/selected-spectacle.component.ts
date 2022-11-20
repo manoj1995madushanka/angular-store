@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Spectacle} from "../types/Spectacle";
 
 @Component({
   selector: 'app-selected-spectacle',
@@ -7,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SelectedSpectacleComponent implements OnInit {
 
+  @Input() spectacle: Spectacle= {} as Spectacle;
 
   constructor() { }
 

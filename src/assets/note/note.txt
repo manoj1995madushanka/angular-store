@@ -35,7 +35,11 @@ pipes are simple functions to use in template expressions to accept an input val
 pipes are useful because you can use them throughout your application, while only declaring each pipe once
 use pipes to transform strings, currency amounts, dates and other data for display
 
-
+parent to child data binding
+  parent component html :
+     <app-selected-spectacle [spectacle]="spectacle"></app-selected-spectacle>
+  child component ts:
+    @Input() spectacle: Spectacle= {} as Spectacle;
 
 
 
