@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Spectacle} from "../types/Spectacle";
 
-interface Spectacle{
-  brand: string;
-  model: string;
-  image: string;
-  price: number;
-}
 
 @Component({
   selector: 'app-spectacle',
