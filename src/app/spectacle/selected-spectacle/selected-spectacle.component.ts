@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Spectacle} from "../../types/Spectacle";
+import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-selected-spectacle',
@@ -11,12 +12,13 @@ export class SelectedSpectacleComponent implements OnInit {
   @Input() spectacle: Spectacle= {} as Spectacle; // create empty object
   @Output() emitSpectacle = new EventEmitter<Spectacle>();
 
-  constructor() { }
+  constructor(private cartService:CartService) { }
 
   ngOnInit(): void {
   }
 
   addToCart() {
-    this.emitSpectacle.emit(this.spectacle);
+    this.cartService.add(this.spectacle);
+    //this.emitSpectacle.emit(this.spectacle);
   }
 }

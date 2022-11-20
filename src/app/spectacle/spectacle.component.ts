@@ -19,8 +19,4 @@ export class SpectacleComponent implements OnInit {
   ngOnInit(): void {
     this.spectacles = this.spectacleService.getSpectacles();
   }
-
-  addToCart(event:Spectacle) {
-    console.log(event)
-  }
 }
