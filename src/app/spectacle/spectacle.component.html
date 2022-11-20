@@ -8,17 +8,11 @@
 </button>
 
 <ul *ngIf="isShowing">
-  <li>
-    <img src="{{glass1Url}}" alt="{{glass1Model}}" width="100">
-    {{glass1Model}} by {{glass1Brand}}
-  </li>
-  <li>
-    <img src="{{glass2Url}}" alt="{{glass2Model}}" width="100">
-    {{glass2Model}} by {{glass2Brand}}
-  </li>
-  <li>
-    <!--below we using property binding-->
-    <img [src]="glass3Url" [alt]="glass3Model" width="100">
-    {{glass3Model}} by {{glass3Brand}}
-  </li>
+  <ng-container *ngFor="let spectacle of spectacles; let i=index">
+    <li>
+      {{i + 1}}
+      <img [src]="spectacle.image" [alt]="spectacle.model" width="100">
+      {{spectacle.model}} by {{spectacle.brand}}
+    </li>
+  </ng-container>
 </ul>
