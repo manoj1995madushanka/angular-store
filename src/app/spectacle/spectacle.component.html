@@ -1,6 +1,10 @@
 <h2>Available glasses</h2>
+<button (click)="isShow=!isShow">
+  <ng-container *ngIf="!isShow">Show</ng-container>
+  <ng-container *ngIf="isShow">Hide</ng-container>
+</button>
 
-<ul>
+<ul *ngIf="isShow">
   <ng-container *ngFor="let spectacle of spectacles; let i=index">
     <app-selected-spectacle (emitSpectacle)="addToCart($event)" [spectacle]="spectacle"></app-selected-spectacle>
   </ng-container>

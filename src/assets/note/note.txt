@@ -50,4 +50,30 @@ child to parent data binding
   parent component
     <app-selected-spectacle (emitSpectacle)="addToCart($event)"></app-selected-spectacle>
 
+lifecycle hooks
+  A component instance has a lifecycle that starts when angular instantiates the component class and renders the component view along with its child views
+  The lifecycle continues with change detection, as angular checks to see when data-bound properties change, and updates both the view and the component instance as needed
+  The lifecycle ends when angular destroys the component instance and removes its rendered template from the DOM
+  Directives have a similar lifecycle
+
+components lifecycle hooks
+  ngOnChange()
+  ngOnInit()
+  ngDoCheck()
+  ngAfterContentInit()
+  ngAfterContentChecked()
+  ngAfterViewInit()
+  ngAfterViewChecked()
+  ngOnDestroy()
+
+
+
+
+
+
+
+
+
+
+
 

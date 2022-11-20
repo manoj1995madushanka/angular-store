@@ -31,6 +31,7 @@ export class SpectacleComponent implements OnInit {
   ]
 
   cart: Spectacle[] = [];
+  isShow: boolean=true;
 
   constructor() { }
 
