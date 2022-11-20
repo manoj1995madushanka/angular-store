@@ -1,6 +1,8 @@
 <h2>Available glasses</h2>
 
 <button (click)="changeShowing()">
+  <!--use ng-container because when we use span here it will create separate html tag inside button but
+  when we use ng-container it is not creating separate html tags-->
   <ng-container *ngIf="!isShowing">Show Glasses</ng-container>
   <ng-container *ngIf="isShowing">Hide Glasses</ng-container>
 </button>
