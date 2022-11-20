@@ -2,10 +2,6 @@
 
 <ul>
   <ng-container *ngFor="let spectacle of spectacles; let i=index">
-    <li class="spectacle">
-      <img [src]="spectacle.image" [alt]="spectacle.model" width="100">
-      <p class="title">{{spectacle.model | titlecase }} by {{spectacle.brand | titlecase }}</p>
-      <p class="currency">{{spectacle.price | currency:'LKR' }}</p>
-    </li>
+    <app-selected-spectacle [spectacle]="spectacle"></app-selected-spectacle>
   </ng-container>
 </ul>

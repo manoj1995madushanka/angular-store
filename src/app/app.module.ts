@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
 import {FormsModule} from "@angular/forms";
+import { SelectedSpectacleComponent } from './selected-spectacle/selected-spectacle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SpectacleComponent
+    SpectacleComponent,
+    SelectedSpectacleComponent
   ],
   imports: [
     BrowserModule,
