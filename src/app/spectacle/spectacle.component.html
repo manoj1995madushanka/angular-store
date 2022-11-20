@@ -9,11 +9,11 @@
 
 <ul *ngIf="isShowing">
   <ng-container *ngFor="let spectacle of spectacles; let i=index">
-    <li>
-      {{i + 1}}
+    <li class="spectacle">
+      <p class="sno">{{i + 1}}</p>
       <img [src]="spectacle.image" [alt]="spectacle.model" width="100">
-      {{spectacle.model | titlecase }} by {{spectacle.brand | titlecase }}
-      <p>{{spectacle.price | currency:'LKR' }}</p>
+      <p class="title">{{spectacle.model | titlecase }} by {{spectacle.brand | titlecase }}</p>
+      <p class="currency">{{spectacle.price | currency:'LKR' }}</p>
     </li>
   </ng-container>
 </ul>
