@@ -22,11 +22,14 @@ export class GlassComponent implements OnInit {
   glass3Brand="SPEXBAY";
   glass3Model="A3004C C2"
 
-  isDisabled: boolean=true;
+  isDisabled: boolean=false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  handleClick() {
+    console.log("button pressed");
+  }
 }
