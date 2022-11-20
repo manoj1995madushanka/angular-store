@@ -23,6 +23,8 @@ export class GlassComponent implements OnInit {
   glass3Model="A3004C C2"
 
   isDisabled: boolean=false;
+  inputValue: string='';
+  twoWayBindValue: any;
 
   constructor() { }
 
@@ -31,5 +33,11 @@ export class GlassComponent implements OnInit {
 
   handleClick() {
     console.log("button pressed");
+  }
+
+  /*this is done using event binding*/
+  handleInput($event: any) {
+    this.inputValue = $event.data.toString();
+    console.log($event);
   }
 }

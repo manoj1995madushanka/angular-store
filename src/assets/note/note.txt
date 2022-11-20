@@ -14,5 +14,7 @@ event binding lets you listen for and respond to user actions such as keystrokes
 <button (click)="onSave()">Save</button>
 above (click) is target event name and onSave() is template statement
 
+two-way binding gives components in your application a way to share data. use two-way binding to listen for events and update values simultaneously between parent and child components
+
 
 

@@ -1,6 +1,12 @@
 <h2>Available glasses</h2>
 
 <button (click)="handleClick()" [disabled]="isDisabled">Show Glasses</button>
+<!--event binding-->
+<input type="text" (input)="handleInput($event)">
+<p>{{inputValue}}</p>
+<!--two way binding-->
+<input type="text" [(ngModel)]="twoWayBindValue">
+<p>{{twoWayBindValue}}</p>
 
 <ul>
   <li>
