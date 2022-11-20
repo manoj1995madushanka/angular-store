@@ -1,4 +1,7 @@
 <h2>Available glasses</h2>
+
+<button [disabled]="isDisabled">Show Glasses</button>
+
 <ul>
   <li>
     <img src="{{glass1Url}}" alt="{{glass1Model}}" width="100">
@@ -9,7 +12,8 @@
     {{glass2Model}} by {{glass2Brand}}
   </li>
   <li>
-    <img src="{{glass3Url}}" alt="{{glass3Model}}" width="100">
+    <!--below we using property binding-->
+    <img [src]="glass3Url" [alt]="glass3Model" width="100">
     {{glass3Model}} by {{glass3Brand}}
   </li>
 </ul>

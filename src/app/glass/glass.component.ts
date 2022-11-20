@@ -22,6 +22,8 @@ export class GlassComponent implements OnInit {
   glass3Brand="SPEXBAY";
   glass3Model="A3004C C2"
 
+  isDisabled: boolean=true;
+
   constructor() { }
 
   ngOnInit(): void {

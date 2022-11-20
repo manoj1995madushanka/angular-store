@@ -7,5 +7,9 @@ for get help :
 interpolation refers to embedding expressions into marked up text
 by default, interpolation uses the double curly braces {{ and  }} as delimiters
 
+property binding in angular helps you set values for properties of HTML elements or directives
+use property binding to do things such as toggle button functionality, set paths programmatically, and share values between components
+
+
 
 
