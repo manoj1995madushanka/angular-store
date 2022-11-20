@@ -22,22 +22,15 @@ export class GlassComponent implements OnInit {
   glass3Brand="SPEXBAY";
   glass3Model="A3004C C2"
 
-  isDisabled: boolean=false;
-  inputValue: string='';
   twoWayBindValue: any;
+  isShowing: boolean=true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  handleClick() {
-    console.log("button pressed");
-  }
-
-  /*this is done using event binding*/
-  handleInput($event: any) {
-    this.inputValue = $event.data.toString();
-    console.log($event);
+  changeShowing() {
+    this.isShowing= !this.isShowing;
   }
 }

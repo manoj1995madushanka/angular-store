@@ -1,14 +1,11 @@
 <h2>Available glasses</h2>
 
-<button (click)="handleClick()" [disabled]="isDisabled">Show Glasses</button>
-<!--event binding-->
-<input type="text" (input)="handleInput($event)">
-<p>{{inputValue}}</p>
-<!--two way binding-->
-<input type="text" [(ngModel)]="twoWayBindValue">
-<p>{{twoWayBindValue}}</p>
+<button (click)="changeShowing()">
+  <ng-container *ngIf="!isShowing">Show Glasses</ng-container>
+  <ng-container *ngIf="isShowing">Hide Glasses</ng-container>
+</button>
 
-<ul>
+<ul *ngIf="isShowing">
   <li>
     <img src="{{glass1Url}}" alt="{{glass1Model}}" width="100">
     {{glass1Model}} by {{glass1Brand}}
