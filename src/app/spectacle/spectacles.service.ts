@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Spectacle} from "../types/Spectacle";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class SpectaclesService {
 
   spectacles: Spectacle[] = [

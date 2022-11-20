@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
-import {Spectacle} from "../types/Spectacle";
+import {Spectacle} from "../../types/Spectacle";
 
 @Component({
   selector: 'app-selected-spectacle',
