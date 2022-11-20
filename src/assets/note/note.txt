@@ -5,5 +5,7 @@ for get help :
   ng generate --help
 
 interpolation refers to embedding expressions into marked up text
+by default, interpolation uses the double curly braces {{ and  }} as delimiters
+
 
 
