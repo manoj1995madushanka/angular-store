@@ -13,4 +13,8 @@ export class CartService {
   add(spectacle:Spectacle){
     this.cart.push(spectacle);
   }
+
+  get() {
+    return this.cart;
+  }
 }
