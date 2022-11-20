@@ -35,14 +35,8 @@ export class SpectacleComponent implements OnInit {
     }
   ]
 
-  isShowing: boolean=true;
-
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  changeShowing() {
-    this.isShowing= !this.isShowing;
   }
 }
