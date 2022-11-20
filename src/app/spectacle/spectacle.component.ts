@@ -30,8 +30,14 @@ export class SpectacleComponent implements OnInit {
     }
   ]
 
+  cart: Spectacle[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addToCart(event:Spectacle) {
+    console.log(event)
   }
 }

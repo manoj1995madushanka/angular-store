@@ -2,6 +2,6 @@
 
 <ul>
   <ng-container *ngFor="let spectacle of spectacles; let i=index">
-    <app-selected-spectacle [spectacle]="spectacle"></app-selected-spectacle>
+    <app-selected-spectacle (emitSpectacle)="addToCart($event)" [spectacle]="spectacle"></app-selected-spectacle>
   </ng-container>
 </ul>

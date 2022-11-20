@@ -41,6 +41,13 @@ parent to child data binding
   child component ts:
     @Input() spectacle: Spectacle= {} as Spectacle;
 
-
+child to parent data binding
+  child component:
+    @Output() emitSpectacle = new EventEmitter<Spectacle>();
+    addToCart() {
+        this.emitSpectacle.emit(this.spectacle);
+    }
+  parent component
+    <app-selected-spectacle (emitSpectacle)="addToCart($event)"></app-selected-spectacle>
 
 
