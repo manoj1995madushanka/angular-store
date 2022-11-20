@@ -1,6 +1,6 @@
 <h2>Available glasses</h2>
 
-<ul *ngIf="isShow">
+<ul>
   <ng-container *ngFor="let spectacle of spectacles; let i=index">
     <app-selected-spectacle (emitSpectacle)="addToCart($event)" [spectacle]="spectacle"></app-selected-spectacle>
   </ng-container>
