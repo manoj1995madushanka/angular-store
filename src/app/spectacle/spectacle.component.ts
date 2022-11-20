@@ -11,10 +11,9 @@ import {SpectaclesService} from "./spectacles.service";
 export class SpectacleComponent implements OnInit {
 
   spectacles: Spectacle[] = [];
-
-
   cart: Spectacle[] = [];
 
+  /*this is the dependency injection*/
   constructor(private spectacleService:SpectaclesService) { }
 
   ngOnInit(): void {

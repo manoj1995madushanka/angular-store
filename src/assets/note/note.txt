@@ -77,6 +77,10 @@ Services can depend on other services.
   eg: userservice which fetching data can depend on httpservice.
 
 
+Dependency Injection is wired into the angular framework and used everywhere to provide new components with the services or other things they need.
+Components consume services; that is, you can inject a service into a component, giving the component access to the service class
+
+
 
 
 
